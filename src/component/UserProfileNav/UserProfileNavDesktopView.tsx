@@ -22,7 +22,8 @@ const UserProfileNavDesktopView: FC = () => {
     navbar_about,
     navbar_terminal,
     navbar_experience,
-    navbar_projects
+    navbar_projects,
+    navbar_blogs
   } = UserInformationDataForNavBar;
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -58,6 +59,16 @@ const UserProfileNavDesktopView: FC = () => {
             sx={textStyleListItemText}
           ></ListItemText>
         </ListItemButton>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => window.open("https://blog.nishantbanjade.com.np", "_blank")}
+        >
+          <ListItemText
+            primary={navbar_blogs}
+            primaryTypographyProps={primaryTypographyStyle}
+            sx={textStyleListItemText}
+          />
+        </ListItemButton>
 
         <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("experience")}>
           <ListItemText
@@ -88,6 +99,7 @@ const UserProfileNavDesktopView: FC = () => {
             sx={textStyleListItemText}
           ></ListItemText>
         </ListItemButton>
+        
         <ListItemButton
           sx={ListItemButtonStyle}
           onClick={() => window.open("https://www.github.com/nixhantb", "_blank")}

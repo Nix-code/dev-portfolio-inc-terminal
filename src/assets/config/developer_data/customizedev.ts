@@ -6,6 +6,7 @@ const developerData = {
   navbar_terminal: "terminal",
   navbar_experience: "experience",
   navbar_projects: "projects",
+  navbar_blogs: "Blogs",
   // Make sure to make it short and crisp
   herobody_img_description: "Desktop computer vector image illustration",
   developer_quote:

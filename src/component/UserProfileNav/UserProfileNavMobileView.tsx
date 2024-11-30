@@ -34,7 +34,8 @@ const UserProfileNavMobileView: FC = () => {
     navbar_contact,
     navbar_terminal,
     navbar_experience,
-    navbar_projects
+    navbar_projects,
+    navbar_blogs
   } = UserInformationDataForNavBar;
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -63,7 +64,7 @@ const UserProfileNavMobileView: FC = () => {
       </NavBarHeaderTitle>
 
       <IconButton aria-label="terminal-icon">
-        <TerminalIcon sx={{ fontSize: "1.3em" }} onClick={() => scrollToSection("terminal")}/>
+        <TerminalIcon sx={{ fontSize: "1.3em" }} onClick={() => scrollToSection("terminal")} />
       </IconButton>
 
       <Drawer anchor="top" open={menuOpen} onClose={toggleMenu}>
@@ -95,8 +96,17 @@ const UserProfileNavMobileView: FC = () => {
               onClick={() => scrollToSection("about")}
             ></ListItemText>
           </ListItemButton>
-
-          <ListItemButton sx={ListItemButtonStyle}  onClick={() => scrollToSection("contact")}>
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => window.open("https://blog.nishantbanjade.com.np", "_blank")}
+          >
+            <ListItemText
+              primary={navbar_blogs}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            />
+          </ListItemButton>
+          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("contact")}>
             <ListItemText
               primary={navbar_contact}
               primaryTypographyProps={primaryTypographyStyleMobile}
@@ -104,7 +114,7 @@ const UserProfileNavMobileView: FC = () => {
             ></ListItemText>
           </ListItemButton>
 
-          <ListItemButton sx={ListItemButtonStyle}  onClick={() => scrollToSection("experience")}>
+          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("experience")}>
             <ListItemText
               primary={navbar_experience}
               primaryTypographyProps={primaryTypographyStyleMobile}
@@ -112,12 +122,12 @@ const UserProfileNavMobileView: FC = () => {
             ></ListItemText>
           </ListItemButton>
           <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("projects")}>
-          <ListItemText
-            primary={navbar_projects}
-            primaryTypographyProps={primaryTypographyStyleMobile}
-            sx={textStyleListItemText}
-          ></ListItemText>
-        </ListItemButton>
+            <ListItemText
+              primary={navbar_projects}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            ></ListItemText>
+          </ListItemButton>
           <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("terminal")}>
             <ListItemText
               primary={navbar_terminal}
@@ -125,16 +135,17 @@ const UserProfileNavMobileView: FC = () => {
               sx={textStyleListItemText}
             ></ListItemText>
           </ListItemButton>
+          
           <ListItemButton
-          sx={ListItemButtonStyle}
-          onClick={() => window.open("https://www.github.com/nixhantb", "_blank")}
-        >
-          <ListItemText
-            primary="Github"
-            primaryTypographyProps={primaryTypographyStyleMobile}
-            sx={textStyleListItemText}
-          />
-        </ListItemButton>
+            sx={ListItemButtonStyle}
+            onClick={() => window.open("https://www.github.com/nixhantb", "_blank")}
+          >
+            <ListItemText
+              primary="Github"
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            />
+          </ListItemButton>
         </ListNavItemContainer>
       </Drawer>
     </NavBarContainer>
