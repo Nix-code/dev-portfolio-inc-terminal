@@ -6,7 +6,7 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import ProjectLists from './ProjectLists';
 import jobleetImage from '../../assets/images/jobleet.png'
 import brokerImage from '../../assets/images/broker.png';
-import search from "../../assets/images/search.jpg";
+import di from "../../assets/images/di.png";
 interface Props {
   title: string
 }
@@ -44,23 +44,23 @@ const projects = [
   },
   {
     src: brokerImage,
-    header: "Distributed Message Broker Engine",
+    header: "QuantumMQ",
     description:
       "This project involves the design and implementation of a custom message broker system from scratch, based on a distributed message queuing protocol. The system aims to facilitate efficient, reliable, and scalable communication between services in a distributed environment.",
-    visit: "https://nixhantb.github.io/ZenoBus-Engine/",
-    learn: "https://github.com/nixhantb/ZenoBus-Engine",
+    visit: "https://nixhantb.github.io/QuantumMQ/",
+    learn: "https://github.com/nixhantb/QuantumMQ",
     skillsDesktop: ["C#", ".Net", "CI/CD", "Docker", "Queues", "IP", "Hashing", "Round", "Robin"],
     skillsMobile: ["C#", ".Net", "CI/CD", "Docker", "IP", "Hashing", "Round", "Robin"],
   },
   {
-    src: search,
-    header: "Custom Search Engine",
+    src: di,
+    header: "InjectTron",
     description:
-      "This project is the Custom Search Engine which involves designing a mini system that crawls websites, indexes pages, and allows fast, ranked keyword searches using data structures like trees, heaps, and graphs, with algorithms for ranking and efficient search..",
-    visit: "https://nixhantb.github.io/ZenoBus-Engine/",
-    learn: "https://github.com/nixhantb/ZenoBus-Engine",
-    skillsDesktop: ["C#", ".Net", "NUnit", "Docker", "CI/CD", "Graph", "Heap", "Tree"],
-    skillsMobile: ["C#", ".Net", "NUnit", "Docker", "CI/CD", "Graph", "Heap", "Tree"],
+      "InjectTron is a lightweight, customizable Dependency Injection (DI) framework built entirely from scratch in C#. It provides a solid foundation for managing object dependencies in a clean, efficient, and maintainable manner.",
+    visit: "https://github.com/nixhantb/InjectTron",
+    learn: "https://github.com/nixhantb/InjectTron",
+    skillsDesktop: ["C#", ".Net", "NUnit", "Docker", "CI/CD", "DI", "OOPS"],
+    skillsMobile: ["C#", ".Net", "NUnit", "Docker", "CI/CD", "DI", "OOPS"],
   },
 ];
 
