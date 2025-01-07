@@ -35,7 +35,8 @@ const UserProfileNavMobileView: FC = () => {
     navbar_terminal,
     navbar_experience,
     navbar_projects,
-    navbar_blogs
+    navbar_blogs,
+    navbar_youtube
   } = UserInformationDataForNavBar;
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -146,6 +147,17 @@ const UserProfileNavMobileView: FC = () => {
               sx={textStyleListItemText}
             />
           </ListItemButton>
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => window.open("https://youtube.com/@codelogs_nishant?si=yiFptd1Wp8Bh2VSC", "_blank")}
+          >
+            <ListItemText
+              primary="YouTube"
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            />
+          </ListItemButton>
+          
         </ListNavItemContainer>
       </Drawer>
     </NavBarContainer>

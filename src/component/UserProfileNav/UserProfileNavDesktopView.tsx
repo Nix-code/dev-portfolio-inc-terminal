@@ -23,7 +23,8 @@ const UserProfileNavDesktopView: FC = () => {
     navbar_terminal,
     navbar_experience,
     navbar_projects,
-    navbar_blogs
+    navbar_blogs,
+    navbar_youtube
   } = UserInformationDataForNavBar;
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -58,6 +59,16 @@ const UserProfileNavDesktopView: FC = () => {
             primaryTypographyProps={primaryTypographyStyle}
             sx={textStyleListItemText}
           ></ListItemText>
+        </ListItemButton>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => window.open("https://youtube.com/@codelogs_nishant?si=yiFptd1Wp8Bh2VSC", "_blank")}
+        >
+          <ListItemText
+            primary="YouTube"
+            primaryTypographyProps={primaryTypographyStyle}
+            sx={textStyleListItemText}
+          />
         </ListItemButton>
         <ListItemButton
           sx={ListItemButtonStyle}
