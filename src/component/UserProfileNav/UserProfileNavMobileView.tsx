@@ -152,7 +152,7 @@ const UserProfileNavMobileView: FC = () => {
             onClick={() => window.open("https://youtube.com/@codelogs_nishant?si=yiFptd1Wp8Bh2VSC", "_blank")}
           >
             <ListItemText
-              primary="YouTube"
+              primary={navbar_youtube}
               primaryTypographyProps={primaryTypographyStyleMobile}
               sx={textStyleListItemText}
             />
